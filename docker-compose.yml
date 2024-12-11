@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./api
+    ports:
+      - "8081:80"
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:80"
